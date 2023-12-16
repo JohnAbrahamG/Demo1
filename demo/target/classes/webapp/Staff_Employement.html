@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Employment</title>
+    <style>
+  
+
+        h2 {
+            text-align: center;
+            color: #333;
+       
+        }
+		
+			
+		th, td {
+            padding: 2px;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            margin: 5px 0 10px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body height="60%">
+
+    <div class="container">
+        <h2>Staff Employment</h2>
+         <form action="/api/staffEmployment" method="Post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="Staff_Code">Staff Code</label></td>
+                        <td><label for="Staff_Name">Staff Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="Staff_Code" name="Staff_Code"></td>
+                        <td><input type="text" id="Staff_Name" name="Staff_Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Company_Code">Company Code</label></td>
+                        <td><label for="Company_Name">Name</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="Company_Code" name="Company_Code"></td>
+                        <td><input type="text" id="Company_Name" name="Company_Name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Ship_Code">Ship Code</label></td>
+                        <td><label for="Ship_Name">Name</label></td>
+                        <td><label for="Call_sign">Call Sign</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="Ship_Code" name="Ship_Code"></td>
+                        <td><input type="text" id="Ship_Name" name="Ship_Name"></td>
+                        <td><input type="text" id="Call_sign" name="Call_sign"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Employment_type">Employment Type</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="Employment_type" name="Employment_type"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Dept">Dept</label></td>
+                        <td><label for="Title">Title</label></td>
+                        <td><label for="Position">Position</label></td>
+                        <td><label for="Function">Function</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="Dept" name="Dept"></td>
+                        <td><input type="text" id="Title" name="Title"></td>
+                        <td><input type="text" id="Position" name="Position"></td>
+                        <td><input type="text" id="Function" name="Function"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Telephone_no">Telephone no</label></td>
+                        <td><label for="Mobile_no">Mobile no</label></td>
+                        <td><label for="Email">Email</label></td>
+                        <td><label for="Website">Website</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" id="Telephone_no" name="Telephone_no"></td>
+                        <td><input type="number" id="Mobile_no" name="Mobile_no"></td>
+                        <td><input type="email" id="Email" name="Email"></td>
+                        <td><input type="text" id="Website" name="Website"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><label for="Remarks">Remarks</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><textarea id="Remarks" name="Remarks"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"><button type="submit">Submit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>
